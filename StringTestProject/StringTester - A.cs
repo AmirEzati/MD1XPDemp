@@ -26,7 +26,7 @@ namespace StringTestProject
 
             //act
             string text = "Agile And Xp Demo";
-            string result = oStringFixer.FixString(text);
+            string result = oStringFixer.FixString(text);// developer
             //Assert
             Assert.AreEqual(expected: "Agile And Xp Demo", actual: result);
         }
