@@ -3,5 +3,13 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>String Fixer</h2>
+
+@using (Html.BeginForm("FixString","String", FormMethod.Post))
+{
+    Html.TextBox("InputText");
+    <input type="submit" value="Fix This String!" />
+}
+
+<h3>Ouput: </h3>
 

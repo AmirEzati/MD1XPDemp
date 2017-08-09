@@ -9,5 +9,15 @@ namespace StringPlayers.Controllers
         {
             return View();
         }
+
+        #region FixString
+        [HttpPost]
+        public ActionResult FixString(string InputText)
+        {
+            BL.StringFixer oStingBuilder = new BL.StringFixer();
+            ViewBag.Result = oStingBuilder.FixString(InputText);
+            return View("Index");
+        }
+        #endregion
     }
 }

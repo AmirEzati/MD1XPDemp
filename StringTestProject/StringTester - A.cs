@@ -60,12 +60,12 @@ namespace StringTestProject
 
 
         [TestMethod]
-        public void DoesItRemoveAllExtraSpacesBeforeAndAfterIfStringIsPassed()
+        public void DoesItRemoveAllExtraDoubleSpacesIfStringIsPassed()
         {
             //arrange
 
             //act
-            string text = "                Agile And Xp Demo                           ";
+            string text = "                Agile                 And           Xp        Demo                           ";
             string result = oStringFixer.FixString(text);
             //Assert
             Assert.AreEqual(expected: "Agile And Xp Demo", actual: result);
