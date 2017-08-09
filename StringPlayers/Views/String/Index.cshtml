@@ -7,9 +7,10 @@
 
 @using (Html.BeginForm("FixString","String", FormMethod.Post))
 {
-    Html.TextBox("InputText");
-    <input type="submit" value="Fix This String!" />
+    
+    <input  type="text" name="InputText" id="InputText" class="form-control"/>
+    <input type="submit" value="Fix This String!" class=""/>
 }
 
-<h3>Ouput: </h3>
+<h3>Ouput: <span style="background-color:aqua; color:orangered">@ViewBag.Result</span> </h3>
 

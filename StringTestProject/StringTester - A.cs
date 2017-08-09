@@ -12,7 +12,6 @@ namespace StringTestProject
         public void DoesItReturnEmptyIfNullOrEmptyIsPassed()
         {
             //arrange
-         
             //act
             string text = string.Empty;
             string result = oStringFixer.FixString(text);
@@ -65,10 +64,10 @@ namespace StringTestProject
             //arrange
 
             //act
-            string text = "                Agile                 And           Xp        Demo                           ";
+            string text = "                Agile                 &           Xp        Demo                           ";
             string result = oStringFixer.FixString(text);
             //Assert
-            Assert.AreEqual(expected: "Agile And Xp Demo", actual: result);
+            Assert.AreEqual(expected: "Agile & Xp Demo", actual: result);
         }
 
 
