@@ -49,5 +49,16 @@ namespace StringTestProject
             Assert.AreEqual(expected: "Agile And Xp Demo", actual: result);
         }
         #endregion
+
+        #region 4
+
+        public void DoesContainIllegallCharachters()
+        {
+            string text = "                Agile                  *                     Xp            Demo                           ";
+            string result = oStringFixer.FixString(text);
+
+            Assert.AreEqual(expected: "Agile And Xp Demo", actual: result);
+        }
+        #endregion 
     }
 }

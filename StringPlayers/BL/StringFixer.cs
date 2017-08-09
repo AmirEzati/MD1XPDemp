@@ -43,6 +43,36 @@ namespace StringPlayers.BL
             #region t5
             output = output.Replace(".", "");
             #endregion
+
+            //#region t6
+            //output = output.Replace("&", "");
+            //#endregion
+
+            //#region t6
+            //List<string> IllegalCharacters = new List<string> {"%","^","*","#","$","&" };
+
+            //foreach(var illegalchar in IllegalCharacters)
+            //{
+            //    output = output.Replace(illegalchar, "");
+            //}
+            //#endregion
+
+            #region t7
+            List<string> IllegalCharacters2 = new List<string> { "%", "^", "*", "#", "$", "&" };
+            IllegalCharacters2.ForEach(c =>{
+                if (!c.Contains("&"))
+                {
+                    output = output.Replace(c, "");
+                }
+            });
+            //foreach (var illegalchar2 in IllegalCharacters2)
+            //{
+            //    if (illegalchar2!="&")
+            //    output = output.Replace(illegalchar2, "");
+            //}
+
+
+            #endregion
             #endregion
             return output;
         }
