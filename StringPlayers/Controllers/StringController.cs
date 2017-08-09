@@ -10,6 +10,16 @@ namespace StringPlayers.Controllers
             return View();
         }
 
+        public ActionResult AccountingSystem()
+        {
+            return View();
+        }
+
+        public ActionResult MissionAndLeave()
+        {
+            return View();
+        }
+
         #region FixString
         [HttpPost]
         public ActionResult FixString(string InputText)
